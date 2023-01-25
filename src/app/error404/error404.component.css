@@ -1,0 +1,103 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+
+.st0{font-family: Bahnschrift;}
+.st1{font-size:83.0285px;}
+.st2{fill:gray;}
+
+svg{
+  margin-top: 150px;
+  margin-right: 100px;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  fill: #F34C16;
+}
+path#XMLID_5_ {
+
+  fill: #f0f3f4;
+  filter: url(#blurFilter4);
+}
+path#XMLID_11_ ,path#XMLID_2_ {
+  fill: #F34C16;
+}
+.circle{
+  animation: out 2s infinite ease-out;
+  fill: #F34C16;
+}
+
+#container{
+  background-color: #15154A;
+  width: 2000px;
+  height: 950px;
+  text-align:center;
+}
+.message{
+  font-family: "Calibri Light";
+  font-size: 27px;
+  margin-top: 70px;
+  margin-right: 88px;
+  color:#F0F3F4;
+}
+.message:after{
+  content:"]";
+}
+.message:before{
+  content:"[";
+}
+
+.message:after, .message:before {
+
+  color: #F34C16;
+  font-size: 27px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity;
+  animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  margin:0 50px;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  0% {r:1;  opacity: 0.9 ;}
+  25%{r:5;  opacity: 0.3 ;}
+  50%{r:10; opacity: 0.2 ;}
+  75%{r:15;opacity:0.1;}
+  100% {r:20;opacity:0;}
+}
+
+
+
+
+
+
+
+
+
+
+

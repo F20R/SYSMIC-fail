@@ -1,0 +1,93 @@
+
+<!--
+<div>
+  <form class="form-group row" #miFormulario="ngForm" (ngSubmit)="rekening(miFormulario)">
+
+    <div class="form-group col-md-3">
+      <input type="email" name="email" placeholder="Email" class="form-control" ngModel>
+    </div>
+
+    <div class="form-group col-md-3">
+      <input type="password" name="password" placeholder="Password" class="form-control" ngModel>
+    </div>
+
+    <br><br>
+    <div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
+  </form>
+
+</div>
+-->
+
+<body style="background-image: url('https://th.bing.com/th/id/R.a4017d04d7757b72a4c9c877335fb964?rik=fuKFtKqqLc8y1g&pid=ImgRaw&r=0')">
+<section class="vh-100" style="margin-bottom: -50px">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="../assets/images/sysmicbig.png"
+             class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form #miFormulario="ngForm" (ngSubmit)="rekening(miFormulario)">
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start" style="color: #f0f3f4;">
+            <p class="lead fw-normal mb-0 me-3">Ingresa con: </p>
+            <button class="btn btn-primary" type="button" style="margin-left: 7px; background:transparent; border-color: transparent;">
+              <span> <img src="../assets/images/twitter.png"></span> <span></span>
+            </button>
+
+            <button class="btn btn-info" type="button" style="margin-left: 7px; background:transparent; border-color: transparent;">
+              <span><img src="../assets/images/facebook.png"/></span><span class="text-white"></span>
+            </button>
+
+            <button class="btn btn-danger" type="button" style="margin-left: 7px; background:transparent; border-color: transparent;">
+              <span> <img src="../assets/images/instagram.png"/> </span> <span></span>
+            </button>
+          </div>
+
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0" style="color: #F0F3F4;">OR</p>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" name="email" placeholder="Introduce tu Email" class="form-control form-control-lg" style="background-color: #f0f3f4; " ngModel />
+            <label class="form-label" style="color: white">Correo Electrónico</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <input type="password" name="password" placeholder="Introduce tu contraseña" class="form-control form-control-lg" style="background-color: #f0f3f4;" ngModel />
+            <label class="form-label" style="color: white">Contraseña</label>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3" style="color: white">
+                Recuérdame
+              </label>
+            </div>
+            <a href="#" class="text" style="color: #f0f3f4;">¿Has olvidado la contraseña?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="submit" class="btn btn-primary btn-lg"
+                    style=" padding-left: 2.5rem; padding-right: 2.5rem; ">Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0" style="color: #f0f3f4;">¿No tienes cuenta? <a href="/crearcuenta" style="color: #F42479" >Registrate</a></p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+<footer id="sticky-footer" class="flex-shrink-0 py-4" style="bottom: 0px">
+  <div class="container text-center">
+    <small> &copy; S Y S M I C </small>
+  </div>
+</footer>

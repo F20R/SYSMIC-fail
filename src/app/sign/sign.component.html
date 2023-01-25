@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div> <!-- para mostrar datos en componente hijo-->
+        {{indice+1}}-
+        {{usuarioLista.nombre}}
+        {{usuarioLista.apellido}}
+        {{usuarioLista.rol}}
+        {{usuarioLista.edad}}
+        <a [routerLink]="['/perfil', indice]" [queryParams]="{accion:'1'}">
+        <!-- Si abajo te da error en las variables, es por el Nombre (usa los de .TS)-->
+          Editar
+        </a>
+        &nbsp;
+        <a [routerLink]="['/perfil', indice]" [queryParams]="{accion:'2'}">
+          <!-- Si abajo te da error en las variables, es por el Nombre (usa los de .TS)-->
+          Borrar
+        </a>
+      </div>
+
+
+      <app-signout (caracteristicasUsuarios)="agregarCaracteristica($event)"></app-signout>
+      <!-- Llamar a la raiz padre (20) | DOCUMENTACION: https://angular.io/guide/inputs-outputs-->
+      <ul style="list-style: none;">
+        <li *ngFor="let caracteristica of listaCaracteristicas">{{caracteristica}}</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--<div>
+
+  <input type="email" name="email" placeholder="Email">
+
+</div>
+
+<div>
+
+  <input type="password" name="password" placeholder="Password">
+
+</div>
+
+
+<div>
+  <input type="button" value="enviar">
+</div>
+
+-->

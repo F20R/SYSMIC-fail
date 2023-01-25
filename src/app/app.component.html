@@ -1,0 +1,49 @@
+<input type="checkbox" id="burger-toggle">
+<label for="burger-toggle" class="burger-menu">
+  <img src="../assets/images/logicono.png"/>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</label>
+<div class="menu">
+  <div class="menu-inner">
+    <ul class="menu-nav">
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Home</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>About</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" *ngIf="!estaLogueado()" href="/rekening"><span>
+            <div>Login</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" *ngIf="estaLogueado()" (click)="logout()"><span>
+            <div>Logout</div>
+          </span></a></li>
+    </ul>
+    <div class="gallery">
+      <div class="title">
+        <p>S Y S M I C</p>
+      </div>
+      <div class="images">
+        <a class="image-link" href="#">
+          <div class="image" data-label="Star"><img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Sun"><img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Tree"><img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Sky"><img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" alt=""></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<router-outlet></router-outlet> <!-- Este se encarga de GESTIONAR todo el enrutamiento desde la raiz principal :D -->

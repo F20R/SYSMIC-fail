@@ -1,0 +1,4 @@
+<!--Formulario elaborado para recibir a la raiz PADRE desde este componente (hijo) -->
+<label>Caracteristica:</label>
+<input type="text" id="item-input" #nuevaCaraceristica> <!--De aqui recoge la INFO -->
+<button type="button" (click)="agregarCaracteristicas(nuevaCaraceristica.value)" class="btn btn-warning">AÑADIR</button>
